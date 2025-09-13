@@ -68,9 +68,15 @@
     </section>
     <script>
       let clock = prompt("What time is it?");
-      if (clock < 12) alert("Good Morning");
-      if (clock > 18) alert("Good Evening");
-      if (clock >= 12 && clock <= 18) alert("Good Afternoon");
+      if (clock < 12) {
+        alert("Good morning");
+      } else {
+        if (clock > 18) {
+          alert("Good evening");
+        } else {
+          alert("Good afternoon");
+        }
+      }
     </script>
   </body>
 </html>

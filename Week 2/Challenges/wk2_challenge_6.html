@@ -67,10 +67,22 @@
       <button>Apply Now</button>
     </section>
     <script>
-      let clock = prompt("What time is it?");
-      if (clock < 12) alert("Good Morning");
-      if (clock > 18) alert("Good Evening");
-      if (clock >= 12 && clock <= 18) alert("Good Afternoon");
+      function eligibility() {
+        let firstName = prompt("Enter your first name");
+        let age = prompt("Enter your age");
+
+        let h1 = document.querySelector("h1");
+
+        if (age >= 18) {
+          h1.innerText = "Hi, " + firstName + "! Welcome to SheCodes.";
+        } else {
+          h1.innerText = "Sorry, " + firstName + ". You cannot join SheCodes.";
+        }
+      }
+
+      let applyButton = document.querySelector("button");
+
+      applyButton.addEventListener("click", eligibility);
     </script>
   </body>
 </html>
