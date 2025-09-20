@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SJ_Yoga_Project</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        to right,
+        rgb(151, 150, 240),
+        rgb(251, 199, 212)
+      );
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        font-style: bold;
+      }
+      h2 {
+        text-align: center;
+        font-size: 40px;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        font-style: bold;
+      }
+      h3 {
+        text-align: center;
+        font-size: 30px;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        font-style: bold;
+      }
+      p {
+        text-align: center;
+        font-size: 20px;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        font-style: bold;
+      }
+
+      ul {
+        list-style-type: none;
+        text-align: center;
+        font-size: 30px;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      margin: 20px;
+      padding: 20px;
+    }
+    .level1 {
+      color: black;
+      text-decoration: underline;
+      text-decoration-color: #774181;
+    }
+
+    .level2 {
+      color: black;
+      text-decoration: underline;
+      text-decoration-color: #e6b2c6;
+    }
+
+    .level3 {
+      color: black;
+      text-decoration: underline;
+      text-decoration-color: #f6e5e5;
+    }
+    a {
+      display: block;
+      text-align: center;
+      font-size: 30px;
+      color: #352961;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      border: 1px solid #774181;
+      background: #352961;
+      color: #f6e5e5;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 16px 24px;
+      border-radius: 30px;
+      transition: all 200ms ease;
+      font-size: large;
+    }
+    .closing {
+      font-size: 40px;
+      margin-top: 40px;
+      color: #29042f;
+      box-shadow: 20px 20px 20px 20px #38dfd9;
+      text-align: center;
+    }
+    .credit-author {
+      font-weight: bold;
+      color: #29042f;
+      font-size: 50px;
+      text-decoration: underline;
+      text-decoration-color: #774181;
+    }
+  </style>
+
+  <body>
+    <h1>Breathe. Black. Belong.</h1>
+    <p>
+      Welcome to <strong>Breathe.</strong> <strong>Black.</strong>
+      <strong>Belong.</strong> <br />Your presence on the mat is
+      <em><strong>powerful</strong></em> <br />Your voice is
+      <em><strong>impactful</strong></em> <br />Your healing is
+      <em><strong>essential</strong></em>
+    </p>
+    <h2>Wellness Practices</h2>
+    <hr />
+    <img
+    src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/720/original/Screenshot_2025-09-13_at_20.22.02.png?1757845029
+    alt="4 styles of yoga" />
+    <hr />
+    <h3>Yoga Styles</h3>
+    <ul>
+      <li class="level3"><strong>Hatha Yoga</strong></li>
+      <li class="level3"><strong>Vinyasa Yoga</strong></li>
+      <li class="level2"><strong>Ashtanga Yoga</strong></li>
+      <li class="level2"><strong>Yin Yoga</strong></li>
+      <li class="level1"><strong>Restorative Yoga</strong></li>
+      <li class="level1"><strong>Bikram Yoga</strong></li>
+    </ul>
+    <br />
+    <a href="https://www.blackwomensyogaco.com/about" target="_blank"
+      >Black Women’s Yoga Collective (BWYC)</a
+    >
+    <br />
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/944/original/yoga_on_mat.jpeg?1758356575"
+      alt="Woman meditating on yoga mat"
+      style="width: 300px; height: auto"
+    />
+    <button>Contact us</button>
+    <br />
+
+    <div class="closing">
+      Coded by <span class="credit-author">Shannel</span>
+    </div>
+  </body>
+
+  <script>
+    function areYouReady() {
+      let name = prompt("What is your name?");
+      let age = prompt("How old are you?");
+      if (age >= 18) {
+        alert(name + ", Get Started with Breathe. Black. Belong.🧘🏾‍♀️");
+      } else {
+        alert(
+          "Sorry, " + name + ". We are unable to proceed due to your age.😕"
+        );
+      }
+    }
+
+    let applyButton = document.querySelector("button");
+
+    applyButton.addEventListener("click", areYouReady);
+  </script>
+</html>
