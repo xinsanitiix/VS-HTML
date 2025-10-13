@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga Project</title>
+  </head>
 
+  <style>
+    button {
+      display: block;
+      margin: 20px auto;
+      border: 1px solid #774181;
+      background: #352961;
+      color: #f6e5e5;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 16px 24px;
+      border-radius: 30px;
+      transition: all 200ms ease;
+      font-size: large;
+    }
+
+    .theme2 {
+      background-color: white;
+      color: black;
+    }
+    .theme1,
+    .body-theme2 {
+      background-color: black;
+      color: white;
+    }
+    img {
+      width: 300px;
+      height: 200px;
+      margin: 10px;
+    }
+    button:hover,
+    img:hover {
+      transform: scale(1.1);
+      transition: all 0.5s ease;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <button class="theme1">Dark Theme</button>
+
+    <h1>Yoga</h1>
+    <img
+    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/759/original/bwyg3.jpeg?1760302115
+    alt="" class="title-img" />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/757/original/bwyg1.jpeg?1760302096"
+      alt=""
+    />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/758/original/bwyg2.jpeg?1760302107"
+      alt=""
+    />
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/760/original/bwyg4.jpeg?1760302123"
+      alt=""
+    />
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/761/original/bwyg6.jpeg?1760302134"
+      alt=""
+    />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/756/original/bmyg1.jpeg?1760302088
+"
+      alt=""
+    />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/762/original/bwyg8.jpeg?1760303509"
+      alt=""
+      <hr
+    />
+    <h2>What is Yoga?</h2>
+    <p>
+      Yoga is a mind and body practice that combines physical postures, and
+      meditation.
+    </p>
+    <p>Remember to breathe deeply and enjoy the practice!</p>
+    <button><div class="yoga">Practice Yoga</div></button>
+    <hr />
+
+    <footer>Coded by Shannel Julius 🧘🏾‍♀️</footer>
+
+    <script>
+      function toggleTheme() {
+        let button = document.querySelector("button");
+        button.classList.add("theme2");
+        button.classList.remove("theme1");
+
+        let body = document.querySelector("body");
+        body.classList.add("body-theme2");
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", toggleTheme);
+    </script>
+  </body>
+</html>

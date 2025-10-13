@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Class Manipulation</title>
+  </head>
+  <style>
+    button {
+      padding: 10px;
+      font-size: 20px;
+      margin: 20px;
+      cursor: pointer;
+    }
 
+    .theme2 {
+      background-color: white;
+      color: black;
+    }
+    .theme1,
+    .body-theme2 {
+      background-color: black;
+      color: white;
+    }
+  </style>
+
+  <body>
+    <button class="theme1">Dark Theme</button>
+    <script>
+      function toggleTheme() {
+        let button = document.querySelector("button");
+        button.classList.add("theme2");
+        button.classList.remove("theme1");
+
+        let body = document.querySelector("body");
+        body.classList.add("body-theme2");
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", toggleTheme);
+    </script>
+  </body>
+</html>
